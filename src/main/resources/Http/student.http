@@ -1,0 +1,65 @@
+### Student create
+POST localhost:8080/student/create
+Content-Type: application/json
+
+{
+  "name": "Aali",
+  "surname": "Tosheyev",
+  "level": 2,
+  "age": 12,
+  "gender": "erkak"
+}
+
+### Student getAll
+GET localhost:8080/student/getAll
+
+### Student getId
+GET localhost:8080/student/get/1
+
+### Student update
+PUT localhost:8080/student/update/5
+Content-Type: application/json
+
+{
+  "name": "Eshmat",
+  "surname": "Eshmatov",
+  "level": 2,
+  "age": 3,
+  "gender": "erkak"
+}
+
+### Student delete
+DELETE localhost:8080/student/delete/2
+
+### Student getName
+GET localhost:8080/student/getName/Toshmat
+
+### Student getSurName
+GET localhost:8080/student/getSurname/Toshmatov
+
+### Student getLevel
+GET localhost:8080/student/getLevel/1
+
+### Student getAge
+GET localhost:8080/student/getAge/1
+
+### Student getGender
+GET localhost:8080/student/getGender/erkak
+
+### Student get by fromDate
+GET localhost:8080/student/dateFrom?from=2023-04-03
+
+### Student get by fromDateTo
+GET localhost:8080/student/date?dateFrom=2023-04-03&dateTo=2023-04-05
+
+###  Student page
+GET localhost:8080/student/pageneshin?page=2&size=3
+
+### Student pageLevel
+POST localhost:8080/student/getLevel?page=2&size=3
+Content-Type: application/json
+
+{
+  "level": 2
+}
+

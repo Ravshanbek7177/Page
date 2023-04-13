@@ -1,0 +1,65 @@
+### Course create
+POST localhost:8080/course/create
+Content-Type: application/json
+
+{
+  "name": "Bekend",
+  "price": 80000,
+  "duration": 3
+}
+
+### Course getAll
+GET localhost:8080/course/getAll
+
+### Course getId
+GET localhost:8080/course/get/1
+
+### Course update
+PUT localhost:8080/course/update/3
+Content-Type: application/json
+
+{
+  "name": "Java",
+  "price": 3232,
+  "duration": 2
+}
+
+### Course delete
+DELETE localhost:8080/course/delete/2
+
+### Course getName
+GET localhost:8080/course/getName/Math
+
+### Course getPrice
+GET localhost:8080/course/getPrice/1212
+
+### Course get by durationDate
+GET localhost:8080/course/durationDate/1
+
+### Course get by fromPriceTo
+GET localhost:8080/course/price?priceFrom=1111&priceTo=3333
+
+### Course get by fromDateTo
+GET localhost:8080/course/date?dateFrom=2023-04-03&dateTo=2023-04-05
+
+### Course page
+GET localhost:8080/course/pageneshin?page=2&size=4
+
+### Course post
+POST localhost:8080/course/getList?page=2&size=4
+Content-Type:  application/json
+
+{
+ "price": 80000
+
+}
+
+### Course between price
+POST localhost:8080/course/getList2?page=2&size=4
+Content-Type:  application/json
+
+{
+  "fromPrice": 80000,
+  "toPrice": 100000
+
+}

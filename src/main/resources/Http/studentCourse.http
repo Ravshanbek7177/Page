@@ -1,0 +1,104 @@
+### StudentCourse create
+POST localhost:8080/studentCourse/create
+Content-Type: application/json
+
+{
+  "studentId": 2,
+  "courseId": 2,
+  "mark": 3
+}
+
+### StudentCourse update
+PUT localhost:8080/studentCourse/update/1
+Content-Type: application/json
+
+{
+  "studentId": 2,
+  "courseId": 2,
+  "mark": 6
+}
+
+### StudentCourse getId
+GET localhost:8080/studentCourse/get/1
+
+### StudentCourse getByStudentId
+GET localhost:8080/studentCourse/getByStudentId/2
+
+### StudentCourse getByCourseId
+GET localhost:8080/studentCourse/getByCourseId/2
+
+### StudentCourse getByMark
+GET localhost:8080/studentCourse/getByMark/5
+
+### StudentCourse get by fromDate
+GET localhost:8080/studentCourse/dateFrom?from=2023-04-03
+
+### StudentCourse getByStudentCourseId
+GET localhost:8080/studentCourse/getByStudentCourseId/1
+
+### StudentCourse delete
+DELETE localhost:8080/studentCourse/delete/2
+
+### Student getAll
+GET localhost:8080/studentCourse/getAll
+
+### StudentCourse getMarkfromDate
+GET localhost:8080/studentCourse/getByStudentMark/2?from=2023-04-05
+
+### Student get byId fromDateTo
+GET localhost:8080/studentCourse/date/2?dateFrom=2023-04-04&dateTo=2023-04-06
+
+### Student get byId getCourseMArk
+GET localhost:8080/studentCourse/sortCreatedDate?studentId=2&courseId=2
+
+### StudentCourse finalMarkAndCourse
+GET localhost:8080/studentCourse/finalMarkAndCourse/2
+
+### StudentCourse finalBigMarkAndCourse
+GET localhost:8080/studentCourse/finalBigMarkAndCourse/2
+
+### StudentCourse firstMarkAndCourse
+GET localhost:8080/studentCourse/firstMarkAndCourse/2
+
+### Student get byId getCourseIdFirstMArk
+GET localhost:8080/studentCourse/getCourseIdFirstMArk?courseId=2&studentId=2
+
+### Student get byId getCourseIdBigFirstMArk
+GET localhost:8080/studentCourse/getCourseIdBigFirstMArk?courseId=2&studentId=2
+
+### StudentCourse getAvgMarkAndCourse
+GET localhost:8080/studentCourse/getAvgMarkAndCourse/2
+
+### StudentCourse getAvgMarkCountAndCourseId
+GET localhost:8080/studentCourse/getAvgMarkAndCourseId?id=2&cid=2
+
+### StudentCourse getMaxMarkAnStudentIdMark
+GET localhost:8080/studentCourse/getMaxMarkAnStudentIdMark?id=2&mark=3
+
+### StudentCourse getMaxMarkAndCourseId
+GET localhost:8080/studentCourse/getMaxMarkAndCourseId/2
+
+### StudentCourse getAvgMarkCourseId
+GET localhost:8080/studentCourse/getAvgMarkCourseId/2
+
+### StudentCourse getAvgMarkCourseIdCount
+GET localhost:8080/studentCourse/getAvgMarkCourseIdCount/2
+
+###  StudentCourse page
+GET localhost:8080/studentCourse/page?page=2&size=3
+
+### Student page StudentID
+POST localhost:8080/studentCourse/StudentId?page=2&size=3
+Content-Type: application/json
+
+{
+  "studentId": 2
+}
+
+### Student page CourseID
+POST localhost:8080/studentCourse/CourseId?page=2&size=3
+Content-Type: application/json
+
+{
+  "courseId": 2
+}
